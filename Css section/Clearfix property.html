@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clearfix property CSS</title>
+<meta charset="UTF-8">
+
+<style>
+div {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<body>
+<h2>Without Clearfix property</h2>
+
+<p>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</p>
+
+<div>
+  <img class="img1" src="https://cdn.britannica.com/s:690x388,c:crop/72/182872-050-914C987D/Hugh-Jackman-title-character-The-Wolverine-James.jpg" alt="Wolverine-James" width="170" height="170">
+  fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+</div>
+
+<h2 style="clear:right">With New Modern Clearfix property</h2>
+<p>wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p>
+
+<div class="clearfix">
+  <img class="img2" src="https://cdn.britannica.com/s:690x388,c:crop/72/182872-050-914C987D/Hugh-Jackman-title-character-The-Wolverine-James.jpg" alt="wolverine" width="170" height="170">
+  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+</div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transparent Box rgba</title>
+<meta charset="UTF-8">
+
+<style>
+div {
+  background: rgb(76, 175, 80);
+  padding: 10px;
+}
+
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+div.second {
+  background: rgba(76, 175, 80, 0.3);
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+}
+</style>
+</head>
+<body>
+
+<h1>Transparent Box rgba</h1>
+<p>With opacity:</p>
+<div style="opacity:0.1;"><p>gokul</p></div>
+<div style="opacity:0.3;"><p>gokul</p></div>
+<div style="opacity:0.6;"><p>gokul</p></div>
+<div><p>gokul</p></div>
+
+<p>With RGBA color values:</p>
+<div class="first"><p>gokul</p></div>
+<div class="second"><p>gokul</p></div>
+<div class="third"><p>gokul</p></div>
+<div><p>gokul</p></div>
+
+</body>
+</html>
