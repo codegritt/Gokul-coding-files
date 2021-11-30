@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>JavaScript Age Comparison</title>
+<meta charset="UFT-8">
+
+<h2>JavaScript Age Comparison</h2>
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("age").value;
+  let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+</script>
+
+</body>
+</html>

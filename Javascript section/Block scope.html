@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>Block scope</title>
+<meta charset="UFT-8">
+
+<h2>Block scope</h2>
+
+<p id="demo"></p>
+
+<script>
+const  x = 10;
+
+{  
+const x = 2;
+}
+
+document.getElementById("demo").innerHTML = "x is " + x;
+</script>
+
+</body>
+</html>
+
+

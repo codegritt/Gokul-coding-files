@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>JavaScript Convert Decimal to Binary</title>
+<meta charset="UFT-8">
+
+<h2>JavaScript Convert Decimal to Binary</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = dec2bin(-5);
+function dec2bin(dec){
+  return (dec >>> 0).toString(2);
+}
+</script>
+
+</body>
+</html>

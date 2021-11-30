@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>JavaScript Errors</title>
+<meta charset="UFT-8">
+
+<h2>JavaScript Errors</h2>
+<p id="demo"></p>
+
+<script>
+let num = 1;
+try {
+  num.toPrecision(500);
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>

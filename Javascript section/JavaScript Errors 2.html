@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>JavaScript Errors 2</title>
+<meta charset="UFT-8">
+
+<h2>JavaScript Errors 2</h2>
+<p id="demo"></p>
+
+
+<script>
+let num = 1;
+try {
+  num.toUpperCase();
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.name;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>Array sort random order</title>
+<meta charset="UFT-8">
+
+<h2>Array sort random order</h2>
+
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(a, b){return 0.5 - Math.random()});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
