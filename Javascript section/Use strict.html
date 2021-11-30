@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>With "use strict"2</title>
+<meta charset="UFT-8">
+
+<h2>With "use strict"2</h2>
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName: "Gokul",
+  lastName: "Chandan",
+  id: 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>

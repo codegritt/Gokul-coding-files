@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>Redeclaring using let</title>
+<meta charset="UFT-8">
+
+<h2>Redeclaring using let</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 2;  
+
+{
+  let x = 3;   
+}
+
+{
+  let x = 4;  
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
